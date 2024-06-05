@@ -55,4 +55,30 @@ public class DynamicArray {
         this.position++;
     } // method add
     
-} // class DynamicArray
+//now we are going to resize the existing array by doubling it
+
+public void resize() {
+        // Create a new array with double the size
+        String[] newData = new String[this.data.length * 2];
+        newData = this.data ;
+
+        
+    } 
+
+//using boolean to determine if it is true or false
+    public boolean contains(String string) {
+            // Return true if the string is found
+            if (this.data.equals(string)) {
+                return true;
+            } //return false if the string isn't found
+
+//now writing a method that returns the number of times the String String appears
+    public int countOf(String string) {
+    int count = 0; //this keeps track of the number of times string appears
+        if (this.data.equals(string)) {
+            count++;
+        }
+     return count ; //this returns the total count of the amount of times string appears
+    }
+}
+
